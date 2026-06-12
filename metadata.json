@@ -1,0 +1,6 @@
+{
+  "name": "Mini PC Store",
+  "description": "A sleek, modular web store for mini computers, cases, and pocket laptops.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

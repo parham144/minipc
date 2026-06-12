@@ -1,0 +1,273 @@
+import { Product } from './types';
+
+export const productsData: Product[] = [
+  {
+    id: '1',
+    name: 'مینی پی‌سی ایسوس Mini PC PN64 i7',
+    englishName: 'ASUS Mini PC PN64 Intel Core i7',
+    category: 'minipc',
+    useCase: 'engineering',
+    price: 38500000,
+    discountPrice: 36900000,
+    brand: 'ASUS',
+    rating: 4.8,
+    reviewCount: 24,
+    stockStatus: 'available',
+    shortDescription: 'کیس فوق فشرده مینی پی‌سی ایسوس نسل ۱۲ با خنک‌کننده بی‌صدا و پورت‌های پرسرعت مولتی‌مدیا مناسب برنامه‌نویسی و رندرهای نیمه‌سنگین.',
+    longDescription: 'ایسوس PN64 یکی از قدرتمندترین مینی‌کامپیوترهای حال حاضر بازار است. با مجهز شدن به پردازنده پرقدرت Core i7-12700H با ۱۴ هسته و ۲۰ رشته، این کامپیوتر کوچک می‌تواند تمام پردازش‌های محاسباتی سنگین، مهندسی و برنامه‌نویسی پیچیده را به راحتی انجام دهد. گرافیک یکپارچه Intel Iris Xe خروجی فوق‌العاده با رزولوشن 8K ارائه می‌دهد و سیستم فن دوگانه هوشمند آن عملکردی بدون صدا در سخت‌ترین شرایط را تضمین می‌کند.',
+    keyFeatures: [
+      'پردازنده نسل دوازدهم Core i7 با فرکانس بوست تا 4.7 گیگاهرتز',
+      'پشتیبانی همزمان از ۴ مانیتور با کیفیت 4K',
+      'مجهز به سیستم دفع حرارت هوشمند با نویز کمتر از ۳۰ دسی‌بل',
+      'امکان نصب هارد دیسک ۲.۵ اینچی و کارت حافظه SSD M.2 فوق سریع'
+    ],
+    specs: {
+      cpu: 'Intel Core i7-12700H (14 Cores, 20 Threads, Max 4.7GHz)',
+      ram: '32GB DDR5 4800MHz (پشتیبانی تا 64GB)',
+      storage: '1TB NVMe PCIe Gen4 SSD',
+      gpu: 'Intel Iris Xe Graphics (Shared)',
+      ports: ['1 x USB-C 3.2 Gen 2', '3 x USB 3.2 Gen 2', '2 x HDMI 2.0', '1 x DisplayPort 1.4', '1 x LAN 2.5G Rj45', '1 x Audio Jack'],
+      dimensions: '120 x 130 x 58 میلی‌متر',
+      weight: '750 گرم',
+      power: 'آداپتور برق ۱۲۰ وات هوشمند',
+      os: 'پشتیبانی کامل از Windows 11 Pro و Linux LTS',
+      cooling: 'سیستم خنک‌کننده فعال هوشمند ضد گرد و غبار (Dual Fan)'
+    },
+    warranty: '۲۴ ماه گارانتی رسمی یکپارچه ایسوس'
+  },
+  {
+    id: '2',
+    name: 'مینی کامپیوتر اپل مک مینی Apple Mac Mini M2',
+    englishName: 'Apple Mac Mini M2 (8GB / 512GB)',
+    category: 'minipc',
+    useCase: 'office',
+    price: 43200000,
+    discountPrice: 41900000,
+    brand: 'Apple',
+    rating: 4.9,
+    reviewCount: 42,
+    stockStatus: 'available',
+    shortDescription: 'مینی کامپیوتر انقلابی اپل با تراشه قدرتمند M2، بسیار کم‌مصرف، بدنه‌ای از آلومینیوم بازیافتی یکپارچه و سیستم‌عامل روان مک‌اواس.',
+    longDescription: 'مک مینی اپل با پردازنده مرکزی ۸ هسته‌ای و پردازنده گرافیکی ۱۰ هسته‌ای M2 مجهز شده است. این مینی کامپیوتر شگفت‌انگیز برای فعالیت‌های روزمره اداری، ادیت سنگین تصاویر، کارهای تولید محتوای ویدیویی در سطح یوتیوب و اینستاگرام و توسعه نرم‌افزار فوق‌العاده سریع است. طراحی مینیمال و اشغال فضای فوق‌العاده کم از مزیت‌های اصلی این غول کوچک است.',
+    keyFeatures: [
+      'چیپست انحصاری Apple M2 با پهنای باند حافظه ۱۰۰ گیگابایت بر ثانیه',
+      'موتور عصبی ۱۶ هسته‌ای برای هوش مصنوعی بومی شبکه عصبی',
+      'مصرف برق فوق‌العاده کم (تنها ۷٫۵ وات در حالت عادی)',
+      'بدنه آلومینیومی یکپارچه و شیک نقره‌ای'
+    ],
+    specs: {
+      cpu: 'Apple M2 (8 Core CPU with 4 performance cores and 4 efficiency cores)',
+      ram: '8GB Unified Memory (رم یکپارچه سرعت بالا)',
+      storage: '512GB High-Speed SSD PCIe',
+      gpu: '10-core GPU, 16-core Neural Engine',
+      ports: ['2 x Thunderbolt 4 (USB-C)', '2 x USB-A', '1 x HDMI', '1 x Gigabit Ethernet', '1 x 3.5mm Headphone Jack'],
+      dimensions: '197 x 197 x 35 میلی‌متر',
+      weight: '1.18 کیلوگرم',
+      power: 'منبع تغذیه داخلی ۱۵۰ وات',
+      os: 'macOS Sequoia (سازگاری کامل با اکوسیستم اپل)',
+      cooling: 'تک فن بسیار آرام با مکش جریان هوای هوشمند مرطوب‌زدایی‌شده'
+    },
+    warranty: '۱۸ ماه گارانتی شرکتی و خدمات پس از فروش آروند'
+  },
+  {
+    id: '3',
+    name: 'مینی نوت بوک مسافرتی GPD Pocket 3 Pro',
+    englishName: 'GPD Pocket 3 Handheld Mini Laptop',
+    category: 'laptop',
+    useCase: 'portable',
+    price: 52000000,
+    brand: 'GPD',
+    rating: 4.6,
+    reviewCount: 12,
+    stockStatus: 'low',
+    shortDescription: 'لپ‌تاپ جیبی و مینی نوت‌بوک بی‌نظیر ۸ اینچی چرخشی با پورت‌های صنعتی ماژولار و پشتیبانی از قلم دیجیتال.',
+    longDescription: 'لپ‌تاپ GPD Pocket 3 ابزاری ایده‌آل برای مهندسان شبکه، برنامه‌نویسان سیار و مدیران سرور است. صفحه نمایش ۸ اینچی لمسی IPS آن قابلیت چرخش ۱۸۰ درجه را دارد که به شما اجازه می‌دهد از دستگاه به عنوان تبلت استفاده کنید. ماژول‌های پورت پشتی به شما این امکان را می‌دهند که پورت‌های سریال صنعتی RS-232 یا کارت‌های ضبط و کنترل از راه دور KVM را اضافه کنید.',
+    keyFeatures: [
+      'بدنه فلزی مقاوم از آلیاژ آلومینیوم درجه نظامی هوایی',
+      'صفحه نمایش ۸ اینچی لمسی با پوشش گوریلا گلس ۵ و پشتیبانی از قلم استایلوس',
+      'قابلیت چرخش ۱۸۰ درجه صفحه و تبدیل به تبلت راحت کارگاهی',
+      'پشتیبانی از پروتکل‌های صنعتی شبکه و پورت KVM ماژولار'
+    ],
+    specs: {
+      cpu: 'Intel Pentium Silver N6000 (4 Cores, 4 Threads, up to 3.3GHz)',
+      ram: '16GB LPDDR4x 2933MHz',
+      storage: '1TB PCIe NVMe M.2 SSD',
+      gpu: 'Intel UHD Graphics',
+      ports: ['1 x USB-C 3.2', '2 x USB-A 3.2', '1 x HDMI 2.0b', '1 x RJ45 Gigabit LAN', 'ماژول انحصاری KVM/RS232'],
+      dimensions: '198 x 137 x 20 میلی‌متر',
+      weight: '725 گرم',
+      power: 'باطری ۴۵ وات‌ساعت با پشتیبانی از شارژ سریع PD 45W',
+      os: 'Windows 11 Home / Ubuntu Linux compatible',
+      cooling: 'میکرو فن مکانیکی پرقدرت فعال با مودهای سایلنت داینامیک'
+    },
+    warranty: '۱۲ ماه گارانتی خدمات پس از فروش پارسیان'
+  },
+  {
+    id: '4',
+    name: 'کیس مینی گیمینگ اینتل NUC 12 Extreme Dragoon',
+    englishName: 'Intel NUC 12 Extreme Kit Dragon Canyon',
+    category: 'minicase',
+    useCase: 'gaming',
+    price: 76500000,
+    discountPrice: 72900000,
+    brand: 'Intel',
+    rating: 4.9,
+    reviewCount: 15,
+    stockStatus: 'available',
+    shortDescription: 'جثه کوچک با قلب اژدها. کیس مینی نیمه‌آماده گیمینگ با قابلیت نصب کارت گرافیک ۳ لبه مجزا و پردازنده نسل ۱۲ دسکتاپ.',
+    longDescription: 'مینی کیس دراگون کنین (Intel NUC 12 Extreme) نهایت قدرت دسکتاپ را در حجمی نزدیک به ۸ لیتر فراهم می‌کند. تفاوت کلیدی این کیس با بقیه مینی‌پی‌سی‌ها در این است که می‌توانید کارت گرافیک مجزای گیمینگ تمام قد (مانند RTX 4070 Ti) روی آن نصب کنید. پردازنده کلاس دسکتاپ i9-12900 به کار رفته پاسخگوی سنگین‌ترین شبیه‌سازی‌ها و رندرهای سه‌بعدی و بازی‌های 4K روز است.',
+    keyFeatures: [
+      'پردازنده قدرتمند کلاس دسکتاپ Core i9-12900 با ۱۶ هسته و ۲۴ رشته پردازشی',
+      'پشتیبانی از اسلات کامل PCIe v5.0 x16 دوتایی برای نصب کارت‌های گرافیک حرفه‌ای',
+      'انعطاف بی‌نظیر ارتقای قطعات اصلی به همراه ۳ اسلات SSD M.2',
+      'نورپردازی RGB بی‌نظیر جلوی کیس قابل برنامه‌ریزی'
+    ],
+    specs: {
+      cpu: 'Intel Core i9-12900 Desktop CPU (16 Cores, 24 Threads, 30MB Cache, 5.1GHz)',
+      ram: '64GB DDR4 3200MHz Dual Channel',
+      storage: '2TB NVMe SSD Western Digital Black',
+      gpu: 'پشتیبانی از کارت گرافیک مجزا تا طول ۳۰ سانتی‌متر (گرافیک مینی اولیه دارد)',
+      ports: ['2 x Thunderbolt 4', '6 x USB 3.2 Gen2', '1 x HDMI 2.0', '1 x 10Gb Ethernet (Aquantia)', '1 x Intel 2.5Gb Ethernet', 'Built-in Wi-Fi 6E'],
+      dimensions: '357 x 189 x 120 میلی‌متر (شاسی ۸ لیتری)',
+      weight: '4.2 کیلوگرم (بدون کارت گرافیک ثانویه)',
+      power: 'منبع تغذیه داخلی ۶۵۰ وات طلایی SFX',
+      os: 'ویندوز ۱۱ پرو رسمی فعال شده',
+      cooling: 'سه عدد فن ۱۲۰ میلی‌متری بی صدا در سقف کیس جهت تخلیه بهینه حرارت'
+    },
+    warranty: '۱۸ ماه گارانتی طلایی توسعه‌تجارت ارشد'
+  },
+  {
+    id: '5',
+    name: 'مینی کیس اداری لنوو ThinkCentre M70q Tiny',
+    englishName: 'Lenovo ThinkCentre M70q Gen 3 Tiny',
+    category: 'minicase',
+    useCase: 'office',
+    price: 19800000,
+    brand: 'Lenovo',
+    rating: 4.7,
+    reviewCount: 31,
+    stockStatus: 'available',
+    shortDescription: 'مینی کیس اداری با دوام فوق‌العاده نظامی، ایمنی سخت‌افزاری برتر، ابعاد بسیار فشرده ایده آل برای مصارف روزانه اداری و حسابداری و وبگردی.',
+    longDescription: 'سری تینک‌سنتر لنوو، پادشاه جان‌سختی و کار مداوم شبانه‌روزی است. مینی کیس M70q ابعادی معادل یک کتاب جیبی دارد اما مجهز به سخت‌افزار تایید شده برند معتبر لنوو به همراه استاندارد تست‌های پایداری نظامی MIL-SPEC است. انتخاب اول بانک‌ها، بیمارستان‌ها و دفاتر کار مدرن.',
+    keyFeatures: [
+      'پردازنده Core i5 نسل دوازده دسکتاپ با پایداری طولانی‌مدت',
+      'امنیت چند لایه با تراشه سخت‌افزاری dTPM 2.0',
+      'امکان نصب مستقیم به پشت مانیتورها بوسیله پیچ استاندارد VESA',
+      'بدنه تمام فلزی مستحکم با جریان هوای دو طرفه ایمن'
+    ],
+    specs: {
+      cpu: 'Intel Core i5-12400T (6 Cores, 12 Threads, Max 4.2GHz)',
+      ram: '16GB DDR4 3200MHz (پشتیبانی تا 64GB)',
+      storage: '512GB PCIe M.2 High-Speed SSD',
+      gpu: 'Intel UHD Graphics 730',
+      ports: ['1 x USB-C 3.2', '4 x USB 3.2', '2 x DisplayPort 1.4', '1 x HDMI 2.1', '1 x RJ-45 Gigabit', 'Audio Jack COMBO'],
+      dimensions: '179 x 182 x 36 میلی‌متر',
+      weight: '1.25 کیلوگرم',
+      power: 'آداپتور برق خارجی ۹۰ وات راندمان بالا',
+      os: 'Windows 11 Home / Enterprise ready',
+      cooling: 'فن بلووری حلزونی بسیار آرام با فیلتر جذب گرد و خاک پیش‌فرض سفارشی'
+    },
+    warranty: '۲۴ ماه گارانتی طلایی خاورمیانه'
+  },
+  {
+    id: '6',
+    name: 'مینی کامپیوتر گیمینگ پرتابل Minisforum UX90',
+    englishName: 'Minisforum UM690 S AMD Ryzen 9 Mini PC',
+    category: 'minipc',
+    useCase: 'gaming',
+    price: 34900000,
+    discountPrice: 32500000,
+    brand: 'Minisforum',
+    rating: 4.8,
+    reviewCount: 19,
+    stockStatus: 'available',
+    shortDescription: 'کیس گیمینگ کوچک فوق‌العاده زیبا با پردازنده درجه‌یک AMD Ryzen 9 و کارت گرافیک رادئون ۶۸۰ام جهت اجرای روان بازی‌ها.',
+    longDescription: 'برند مینیسفورم مینی کامپیوتر قدرتمندی را معرفی کرده که به کارت فرعی ۲۴ هسته‌ای گرافیک AMD Radeon 680M تکیه دارد. این کارت گرافیکی قدرتمند بر پایه معماری RDNA2 حتی بازی‌های سنگین مانند Cyberpunk 2077 را در کیفیت 1080p با نرخ فریم کاملاً روان اجرا می‌کند. علاوه بر آن پردازنده Ryzen 9 قدرت پردازش چند‌رشته‌ای فوق‌العاده‌ای ارائه می‌کند.',
+    keyFeatures: [
+      'پردازنده بسیار پرقدرت AMD Ryzen 9 6900HX با فرکانس فوق العاده تا 4.9 گیگاهرتز',
+      'کارت گرافیک قدرتمند مجتمع Radeon 680M با ۱۲ هسته پردازش گرافیکی گراف',
+      'خنک‌کننده فلز مایع (Liquid Metal) جهت بازی بی‌وقفه و پایین نگه داشتن حرارت پردازنده',
+      'مجهز به پورت پرسرعت USB4 مگابیتی با پهنای باند ۴۰ گیگابیت بر ثانیه'
+    ],
+    specs: {
+      cpu: 'AMD Ryzen 9 6900HX (8 Cores, 16 Threads, up to 4.9GHz)',
+      ram: '32GB DDR5 4800MHz (Dual Channel)',
+      storage: '1TB PCIe Gen4 SSD (Super speed)',
+      gpu: 'AMD Radeon 680M Graphics (12 Core RDNA2)',
+      ports: ['1 x USB4 Type-C (Up to 40Gbps)', '1 x USB-C (Data Only)', '4 x USB 3.2 Gen2', '2 x HDMI 2.1 (4K@60Hz)', '1 x RJ45 2.5G LAN'],
+      dimensions: '128 x 126 x 48 میلی‌متر',
+      weight: '620 گرم',
+      power: 'منبع تغذیه خارجی ۱۹ ولت آداپتور قدرتمند',
+      os: 'ویندوز ۱۱ پرو فعال شده اورجینال',
+      cooling: 'سیستم کولینگ پیشرفته نیتروژنه مایع با لوله‌های توخالی داغ دوتایی مسی'
+    },
+    warranty: '۱۸ ماه گارانتی سراسری همراه فردا'
+  },
+  {
+    id: '7',
+    name: 'لپ‌تاپ مینی گیمینگ لمسی GPD WIN Max 2',
+    englishName: 'GPD WIN Max 2 Handheld Gaming Laptop',
+    category: 'laptop',
+    useCase: 'gaming',
+    price: 68000000,
+    discountPrice: 65900000,
+    brand: 'GPD',
+    rating: 4.7,
+    reviewCount: 8,
+    stockStatus: 'low',
+    shortDescription: 'یک هیولای بازی ۱۰.۱ اینچی همراه. کیبورد فیزیکی دارنده کنترلر دکمه‌های تاصورتی مخفی پشت مغناطیسی و پورت OCuLink.',
+    longDescription: 'دستگاه GPD WIN Max 2 پیوندی بین لپ‌تاپ معمولی و یک کنسول بازی همراه قدرتمند ایجاد کرده است. در زیر درپوش مغناطیسی بالا، دکمه‌های کنترلر گیمینگ پنهان شده‌اند. با نمایشگر لمسی ۱۰.۱ اینچی با حاشیه ناچیز، رم سرعت بالای ddr5 و پردازنده فوق‌العاده قوی Ryzen 7، این مدل تمام بازی‌های سنگین جدید و محاسبات مهندسی را با خود به سفر ببرید.',
+    keyFeatures: [
+      'پردازنده ممتاز AMD Ryzen 7 7840U با معماری جدید Zen 4',
+      'کنترلر گیم‌پد داخلی ارگونومیک بهینه با آنالوگ‌های اثر هال بدون دریفت تفنگ',
+      'پورت پرسرعت و مدرن OCuLink با پهنای باند تا ۶۴ گیگابیت برای افزایش کارت گرافیک دسکتاپی خارجی eGPU',
+      'کیبورد کامل نور پس‌زمینه به همراه تاچ‌پد دقیق مرکزی و شیارهای مغناطیسی پوشش‌ها'
+    ],
+    specs: {
+      cpu: 'AMD Ryzen 7 7840U (8 Cores, 16 Threads, up to 5.1GHz)',
+      ram: '32GB LPDDR5x 7500MHz (فوق‌العاده سریع با لتنسی ناچیز)',
+      storage: '2TB NVMe M.2 SSD PCIe Gen4',
+      gpu: 'AMD Radeon 780M (پرچم‌دار گرافیک‌های مجتمع جهان)',
+      ports: ['1 x OCuLink (SFF-8612)', '1 x USB4 (40Gbps)', '1 x USB-C 3.2', '2 x USB-A 3.2', '1 x HDMI 2.1', '1 x SD & MicroSD slots', '1 x 3.5mm Jack'],
+      dimensions: '227 x 160 x 23 میلی‌متر',
+      weight: '1005 گرم',
+      power: 'باطری ۶۷ وات‌ساعت عظیم با شارژر ۱۰۰ وات PD',
+      os: 'Windows 11 Home / SteamOS compatible',
+      cooling: 'فن سانتریفیوژ دوتایی با لوله‌های مسی انتقال سریع گرما و پره‌های بهینه‌شده گرافیت'
+    },
+    warranty: '۱۲ ماه گارانتی تعویض بین‌المللی گلدن‌تک'
+  },
+  {
+    id: '8',
+    name: 'مینی کامپیوتر اچ‌پی مینی کامپکت EliteDesk 800 G9',
+    englishName: 'HP EliteDesk 800 G9 Mini PC i5',
+    category: 'minipc',
+    useCase: 'office',
+    price: 26500000,
+    brand: 'HP',
+    rating: 4.6,
+    reviewCount: 16,
+    stockStatus: 'available',
+    shortDescription: 'شاهکار حرفه‌ای اچ‌پی برای کارهای تجاری، امنیت فوق پیشرفته بیوس به همراه قابلیت کاربری ۲۴ ساعته بی‌صدا.',
+    longDescription: 'کمپانی اچ‌پی با سری الیت‌دسک اوج اقتدار صنعتی خود را نشان داده است. مینی کیس توری دار خنک EliteDesk 800 G9 با پردازنده قدرتمند نسل دوازده و تکنولوژی اختصاصی محافظت لایه‌ای HP Sure Start گزینه‌ای امن برای هر شبکه بیزینسی مجزا به حساب می‌آید.',
+    keyFeatures: [
+      'امنیت بیولوژیکی و سخت‌افزاری انحصاری HP BIOSphere',
+      'امکان خروجی مانیتور هم‌زمان تا سه نمایشگر روان بدون بافر',
+      'بسیار بهینه با سطح سبز الکتریسیته استاندارد Energy Star',
+      'بدنه فلزی کشویی ریل‌دار جهت ارتقای قطعات با دکمه لمسی'
+    ],
+    specs: {
+      cpu: 'Intel Core i5-12500 (6 Cores, 12 Threads, Max 4.6GHz)',
+      ram: '16GB DDR5 4800MHz (قابل ارتقا تا 64GB)',
+      storage: '512GB PCIe NVMe SSD',
+      gpu: 'Intel UHD Graphics 770',
+      ports: ['1 x USB-C 3.2', '5 x USB-A 3.2', '2 x DisplayPort 1.4', '1 x HDMI 2.1', '1 x RJ-45 LAN Gigabit'],
+      dimensions: '177 x 175 x 34 میلی‌متر',
+      weight: '1.42 کیلوگرم',
+      power: 'شارژر خارجی ۹۰ وات بهینه مصرف کم',
+      os: 'Windows 11 Pro 64-bit pre-installed',
+      cooling: 'سیستم خنک‌کننده پره برنزی فوق متراکم با صدای نزدیک به صفر دسی‌بل'
+    },
+    warranty: '۲۴ ماه گارانتی معتبر پارس اقیانوس'
+  }
+];
